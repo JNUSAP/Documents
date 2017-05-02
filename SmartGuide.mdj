@@ -34227,7 +34227,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+POST suggest..bdg(name, gps)",
+											"text": "+suggest_bdg(name, gps): POST",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -34256,7 +34256,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+GET suggest_id_edit()",
+											"text": "+suggest_id_edit(): POST",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -53036,7 +53036,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFbchE9QdJtIHE="
 							},
-							"name": "POST suggest..bdg",
+							"name": "suggest_bdg",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
@@ -53051,7 +53051,6 @@
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -53067,11 +53066,25 @@
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
 									"direction": "in"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFbyRU0WUDLAk4=",
+									"_parent": {
+										"$ref": "AAAAAAFbyG5Tv6p/75I="
+									},
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": "POST",
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "return"
 								}
 							],
 							"concurrency": "sequential",
@@ -53084,10 +53097,27 @@
 							"_parent": {
 								"$ref": "AAAAAAFbchE9QdJtIHE="
 							},
-							"name": "GET suggest_id_edit",
+							"name": "suggest_id_edit",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFbyRVUJ0JalNk=",
+									"_parent": {
+										"$ref": "AAAAAAFbyG+etLR+jg4="
+									},
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": "POST",
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "return"
+								}
+							],
 							"concurrency": "sequential",
 							"isQuery": false,
 							"isAbstract": false
